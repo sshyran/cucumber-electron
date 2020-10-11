@@ -32,7 +32,6 @@ jobs:
           ${{ runner.os }}-
     - run: npm install
     - run: npm install --no-save electron@${{matrix.electron}}
-    - run: npm ls
     - name: Run tests
       uses: GabrielBB/xvfb-action@v1
       with:
